@@ -4,9 +4,9 @@ ruby '2.2.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use mysql as the database for Active Record
-gem 'pg'
+# gem 'pg'
 # gem 'mysql2'
-# gem 'sqlite3'
+gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -94,7 +94,9 @@ group :development, :test do
 end
 
 group :production, :staging do
-    # ログ保存先変更、静的アセット Heroku 向けに調整
-      gem 'rails_12factor'
+  # Heroku用DB
+  gem 'pg'
+  # ログ保存先変更、静的アセット Heroku 向けに調整
+  gem 'rails_12factor'
 end
 
