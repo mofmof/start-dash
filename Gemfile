@@ -60,13 +60,13 @@ gem 'enum_help'
 # Seed Data Management
 gem 'seed-fu'
 
-# N+1問題検出
-gem 'bullet', :group => :development
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'rubocop'
+
+  # N+1問題検出
+  gem 'bullet'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   # 現時点では、better_errorsの方が使いやすい
