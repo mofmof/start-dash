@@ -13,6 +13,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'font-awesome-rails'
 
 # easy to write a form
+gem 'bootstrap-sass'
 gem 'bootstrap_form'
 #gem 'simple_form' #代替案
 
@@ -40,6 +41,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 # login
 gem 'devise'
+gem 'devise-bootstrap-views'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
 
