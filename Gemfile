@@ -40,6 +40,9 @@ gem 'bcrypt', '~> 3.1.7'
 
 # login
 gem 'devise'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
+
 # admin pages
 gem 'rails_admin'
 
@@ -86,7 +89,7 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'capybara'
   gem 'selenium-webdriver'
-  
+
   # dummy data
   gem 'faker'
 
@@ -99,4 +102,3 @@ group :production, :staging do
   # ログ保存先変更、静的アセット Heroku 向けに調整
   gem 'rails_12factor'
 end
-
