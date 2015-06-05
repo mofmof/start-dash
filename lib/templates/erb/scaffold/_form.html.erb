@@ -1,31 +1,14 @@
-<%%= form_for(@<%= singular_table_name %>) do |f| %>
-  <%% if @<%= singular_table_name %>.errors.any? %>
-    <div id="error_explanation">
-      <h2><%%= pluralize(@<%= singular_table_name %>.errors.count, "error") %> prohibited this <%= singular_table_name %> from being saved:</h2>
+<%%= bootstrap_form_for(@<%= singular_table_name %>) do |f| %>
+  <%%= render "shared/errors", object: @<%= singular_table_name %> %>
 
-      <ul>
-      <%% @<%= singular_table_name %>.errors.full_messages.each do |message| %>
-        <li><%%= message %></li>
-      <%% end %>
-      </ul>
-    </div>
-  <%% end %>
-
-<% attributes.each do |attribute| -%>
-  <div class="field">
-<% if attribute.password_digest? -%>
-    <%%= f.label :password %><br>
-    <%%= f.password_field :password %>
-  </div>
-  <div class="field">
-    <%%= f.label :password_confirmation %><br>
-    <%%= f.password_field :password_confirmation %>
-<% else -%>
-    <%%= f.label :<%= attribute.column_name %> %><br>
-    <%%= f.<%= attribute.field_type %> :<%= attribute.column_name %> %>
-<% end -%>
-  </div>
-<% end -%>
+  <% attributes.each do |attribute| -%>
+    <% if attribute.password_digest? -%>
+      <%%= f.password_field :password %>
+      <%%= f.password_field :password_confirmation %>
+    <% else -%>
+      <%%= f.<%= attribute.field_type %> :<%= attribute.column_name %> %>
+    <% end -%>
+  <% end -%>
   <div class="actions">
     <%%= f.submit %>
   </div>

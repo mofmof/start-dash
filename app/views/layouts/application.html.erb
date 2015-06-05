@@ -7,27 +7,43 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<header>
-  <nav>
-    <!-- user_signed_in? はユーザがログインしているか調べるdeviseのHelperメソッド -->
-    <% if user_signed_in? %> 
-      <!-- current_user は現在ログインしているUserオブジェクトを返すdeviseのHelperメソッド -->
-    <!-- *_path はUserモデルを作成したときに、
-          deviseにより自動で作成されてますので、rake routesで確認できます -->
-    Logged in as <strong><%= current_user.email %></strong>.
-    <%= link_to 'プロフィール変更', edit_user_registration_path %> |
-    <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-  <% else %>
-      <%= link_to "サインイン", new_user_registration_path %> |
-    <%= link_to "ログイン", new_user_session_path %>
+<div class="container" style="margin-top:80px;">
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">もふもふテンプレート</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#">Action1</a></li>
+          <li><a href="#">Action2</a></li>
+          <li><a href="#">Action3</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <%# user_signed_in? はユーザがログインしているか調べるdeviseのHelperメソッド %>
+          <% if user_signed_in? %>
+            <%# current_user は現在ログインしているUserオブジェクトを返すdeviseのHelperメソッド %>
+            <%# *_path はUserモデルを作成したときに、
+              #    deviseにより自動で作成されてますので、rake routesで確認できます %>
+            <li><%= link_to current_user.email, edit_user_registration_path %></li>
+            <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+          <% else %>
+            <li><%= link_to "サインイン", new_user_registration_path %></li>
+            <li><%= link_to "ログイン", new_user_session_path %></li>
+          <% end %>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <% if flash[:notice] %>
+    <div class="alert alert-success"><%= notice %></div>
   <% end %>
-  </nav>
-</header>
+  <% if flash[:error] %>
+    <div class="alert alert-danger"><%= error %></div>
+  <% end %>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-
-<%= yield %>
-
+  <%= yield %>
+</div>
 </body>
 </html>
