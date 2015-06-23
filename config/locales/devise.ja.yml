@@ -1,0 +1,80 @@
+ja:
+  errors:
+    messages:
+      not_found: "は見つかりませんでした"
+#      not_found: "not found"
+      already_confirmed: "は既に登録済みです"
+#      already_confirmed: "was already confirmed"
+      not_locked: "は凍結されていません"
+#      not_locked: "was not locked"
+      not_saved: "入力に誤りがあります。"
+
+  devise:
+    failure:
+      user:
+        not_found_in_database: "メールアドレスまたはパスワードが確認できません。"
+      already_authenticated: 'すでにログイン済みです'
+      unauthenticated: 'ログインしてください。'
+#      unauthenticated: 'You need to sign in or sign up before continuing.'
+      unconfirmed: '本登録を行ってください。'
+#      unconfirmed: 'You have to confirm your account before continuing.'
+      locked: 'あなたのアカウントは凍結されています。'
+#      locked: 'Your account is locked.'
+      invalid: 'メールアドレスとパスワードを入力してください。'
+#      invalid: 'Invalid email or password.'
+      invalid_token: '認証キーが不正です。'
+#      invalid_token: 'Invalid authentication token.'
+      timeout: 'セッションがタイムアウトしました。もう一度ログインしてください。'
+#      timeout: 'Your session expired, please sign in again to continue.'
+      inactive: 'アカウントがアクティベートされていません。'
+#      inactive: 'Your account was not activated yet.'
+    sessions:
+      signed_in: 'ログインしました。'
+#      signed_in: 'Signed in successfully.'
+      signed_out: 'ログアウトしました。'
+#      signed_out: 'Signed out successfully.'
+    passwords:
+      send_instructions: 'パスワードのリセット方法を数分以内にメールでご連絡します。'
+#      send_instructions: 'You will receive an email with instructions about how to reset your password in a few minutes.'
+      updated: 'パスワードを変更しました。'
+#      updated: 'Your password was changed successfully. You are now signed in.'
+    confirmations:
+      send_instructions: '登録方法を数分以内にメールでご連絡します。'
+#      send_instructions: 'You will receive an email with instructions about how to confirm your account in a few minutes.'
+      confirmed: 'アカウントを登録しました。'
+#      confirmed: 'Your account was successfully confirmed. You are now signed in.'
+    registrations:
+      user:
+        signed_up_but_unconfirmed: '送付されたメールよりアカウントをアクティベーションしてください'
+        update_needs_confirmation: '新しいメールアドレスに送付されたメールより更新確認をしてください'
+      signed_up: 'アカウント登録を受け付けました。確認のメールをお送りします。'
+#      signed_up: 'You have signed up successfully. If enabled, a confirmation was sent to your e-mail.'
+      updated: 'アカウントを更新しました。'
+#      updated: 'You updated your account successfully.'
+      destroyed: 'アカウントを削除しました。またのご利用をお待ちしております。'
+#      destroyed: 'Bye! Your account was successfully cancelled. We hope to see you again soon.'
+    unlocks:
+      send_instructions: 'アカウントの凍結解除方法を数分以内にメールでご連絡します。'
+#      send_instructions: 'You will receive an email with instructions about how to unlock your account in a few minutes.'
+      unlocked: 'アカウントを凍結解除しました。'
+#      unlocked: 'Your account was successfully unlocked. You are now signed in.'
+    mailer:
+      confirmation_instructions:
+        subject: 'アカウントの登録方法'
+        hello: "Qsukeにご登録いただきありがとうございます。" 
+        confirm_explanation: "誤登録防止の為、下記のURLをクリックして会員登録を完了してください。"
+        confirm_link: "アカウントを確認する"
+      reset_password_instructions:
+        subject: 'パスワードの再設定'
+        hello: 'いつもqsukeをご利用いただきありがとうございます。'
+        reset_password_explanation: "パスワードリセットのリクエストが行われました。パスワード再設定用リンクにアクセスして、パスワードを再設定してください。"
+        reset_password_link: "パスワードを変更する"
+        please_ignore: "もしもパスワードリセットをリクエストしていない場合は、このメールを無視して下さい。"
+        wont_change: "上記リンクをクリックして新しいパスワードを作成しない限り、パスワードは変更されません。"
+      unlock_instructions:
+        subject: 'アカウントの凍結解除'
+        title: "こんにちは"
+        locked_explanation: "ログイン失敗の回数が多すぎたために、あなたのアカウントはロックされました。"
+        unlock_explanation: "あなたのアカウントのロックを解除するためには、以下のリンクをクリックして下さい:"
+        unlock_link: "アカウントのロックを解除する"
+
