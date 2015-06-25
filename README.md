@@ -24,12 +24,21 @@ See Gemfile.
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## 使い方
+本リポジトリのソースをクローンし、新規プロジェクト用のリポジトリ作成した上で、originの宛先を変更してください。
+
+```
+git clone git@github.com:mofmof/it-trend.git <new app name>
+cd <new app name>
+# github上に新しいリポジトリを作成する
+remote set-url origin <new url>
+git push -u origin master
+```
 
 * Deployment instructions
 
 * ...
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+本テンプレートに関するご質問・ご要望は下記サイトからお願いします。
+また週3日〜働けるRailsエンジニアを絶賛募集しています。
+www.mof-mof.co.jp
