@@ -18,12 +18,6 @@
 * Ruby version
 See Gemfile.
 
-* Configuration
-* Database creation
-* Database initialization
-
-* How to run the test suite
-
 ## 使い方
 本リポジトリのソースをクローンし、新規プロジェクト用のリポジトリ作成した上で、originの宛先を変更してください。
 
@@ -35,10 +29,7 @@ remote set-url origin <new url>
 git push -u origin master
 ```
 
-* Deployment instructions
-
-* ...
-
+## 問い合わせ
 本テンプレートに関するご質問・ご要望は下記サイトからお願いします。
 また週3日〜働けるRailsエンジニアを絶賛募集しています。
 www.mof-mof.co.jp
