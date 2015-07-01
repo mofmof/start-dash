@@ -97,6 +97,7 @@ group :development, :test do
   gem 'faker'
 
   gem 'database_cleaner'
+  gem 'letter_opener'
 end
 
 group :production, :staging do
