@@ -5,7 +5,7 @@
 ## 実装されている設定&機能一覧
 * application.rbの日本用設定(timezone, i18n)
 * time_format.rb --> デフォルトの時間フォーマット設定
-* deviseによるログイン機能
+* deviseによるログイン機能（メールアクティベーション含）
 * rails_adminを使用した管理画面の設定
 * bootstrap設定
 * scaffoldにより生成されるファイルの限定
@@ -14,8 +14,9 @@
 * .gitignoreの設定
 * Heroku用Gemの設定
 * RSpecの設定
+* letter_openerの設定
 
-* Ruby version
+## Ruby version
 See Gemfile.
 
 ## 使い方
