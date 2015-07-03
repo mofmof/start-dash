@@ -23,10 +23,10 @@ See Gemfile.
 本リポジトリのソースをクローンし、新規プロジェクト用のリポジトリ作成した上で、originの宛先を変更してください。
 
 ```
-git clone git@github.com:mofmof/it-trend.git <new app name>
+git clone git@github.com:mofmof/start-dash.git <new app name>
 cd <new app name>
 # github上に新しいリポジトリを作成する
-remote set-url origin <new url>
+git remote set-url origin <new url>
 git push -u origin master
 ```
 
