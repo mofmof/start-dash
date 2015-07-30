@@ -4,6 +4,7 @@
 
 ## 実装されている設定&機能一覧
 * application.rbの日本用設定(timezone, i18n)
+* DBの初期設定はPostgreSQL
 * time_format.rb --> デフォルトの時間フォーマット設定
 * deviseによるログイン機能（メールアクティベーション含）
 * rails_adminを使用した管理画面の設定
@@ -20,6 +21,7 @@
 See Gemfile.
 
 ## 使い方
+### リポジトリの設定
 本リポジトリのソースをクローンし、新規プロジェクト用のリポジトリ作成した上で、originの宛先を変更してください。
 
 ```
@@ -28,6 +30,17 @@ cd <new app name>
 # github上に新しいリポジトリを作成する
 git remote set-url origin <new url>
 git push -u origin master
+```
+
+### DB設定
+初期設定はPostgreSQL
+
+```
+rake db:create
+rake db:migrate
+
+rake db:create RAILS_ENV=test
+rake db:migrate RAILS_ENV=test
 ```
 
 ## 問い合わせ
