@@ -3,8 +3,11 @@ ruby '2.2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
-# Use mysql as the database for Active Record
+
+# select DB for local server
 # gem 'mysql2'
+# gem 'sqlite3', :group => :development
+gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -59,7 +62,7 @@ gem 'enum_help'
 gem 'seed-fu', '~> 2.3'
 
 group :development, :test do
-  gem 'sqlite3'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'rubocop'
@@ -101,7 +104,7 @@ end
 
 group :production, :staging do
   # Heroku用DB
-  gem 'pg'
+  #gem 'pg'
   # ログ保存先変更、静的アセット Heroku 向けに調整
   gem 'rails_12factor'
 end
