@@ -5,15 +5,12 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: postgresql
-  host: localhost
+  adapter: mysql2
   encoding: utf8
+  database: start_dash
   pool: 5
-  username: postgres
-  password: 1218
-  #adapter: sqlite3
-  #pool: 5
-  #timeout: 5000
+  username: root
+  password:
 
 development:
   <<: *default

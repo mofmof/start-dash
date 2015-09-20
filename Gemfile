@@ -1,15 +1,17 @@
 source 'https://rubygems.org'
-ruby '2.2.1'
+ruby '2.2.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.1'
+gem 'rails', '4.2.4'
 
 # select DB for local server
-# gem 'mysql2'
+# TODO Rails4.2.4の問題で低いバージョンを指定。問題なくなったらバージョン指定を解除する
+gem 'mysql2', '~> 0.3.20'
 # gem 'sqlite3', :group => :development
-gem 'pg'
+#gem 'pg'
 
 # Use SCSS for stylesheets
+gem 'sass'
 gem 'sass-rails', '~> 5.0'
 gem 'font-awesome-rails'
 
