@@ -5,10 +5,9 @@ ruby '2.2.3'
 gem 'rails', '4.2.4'
 
 # select DB for local server
-# TODO Rails4.2.4の問題で低いバージョンを指定。問題なくなったらバージョン指定を解除する
-gem 'mysql2', '~> 0.3.20'
+#gem 'mysql2'
 # gem 'sqlite3', :group => :development
-#gem 'pg'
+gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass'
@@ -62,8 +61,6 @@ gem 'enum_help'
 
 # Seed Data Management
 gem 'seed-fu', '~> 2.3'
-
-gem 'dotenv-rails'
 
 group :development, :test do
 
