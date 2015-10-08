@@ -8,7 +8,9 @@
 </head>
 <body>
   <%= render 'layouts/header' %>
-  <%= yield %>
-
+  <%= render "shared/flash" %>
+  <div class="container container-main">
+    <%= yield %>
+  </div>
 </body>
 </html>

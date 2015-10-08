@@ -1,15 +1,16 @@
 source 'https://rubygems.org'
-ruby '2.2.1'
+ruby '2.2.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.1'
+gem 'rails', '4.2.4'
 
 # select DB for local server
-# gem 'mysql2'
+#gem 'mysql2'
 # gem 'sqlite3', :group => :development
 gem 'pg'
 
 # Use SCSS for stylesheets
+gem 'sass'
 gem 'sass-rails', '~> 5.0'
 gem 'font-awesome-rails'
 
