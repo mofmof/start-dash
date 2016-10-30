@@ -89,7 +89,7 @@ group :development, :test do
   gem 'pry-stack_explorer'
 
   # rspec
-  gem 'rspec-rails', '~> 3.0.0'
+  gem 'rspec-rails', '~> 3.5.0'
   gem 'factory_girl_rails'
   gem 'guard'
   gem 'guard-rspec'
