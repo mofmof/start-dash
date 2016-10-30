@@ -62,6 +62,8 @@ gem 'enum_help'
 # Seed Data Management
 gem 'seed-fu'
 
+gem 'puma', group: :development
+
 group :development, :test do
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
