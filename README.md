@@ -29,7 +29,7 @@ git clone git@github.com:mofmof/start-dash.git <new app name>
 cd <new app name>
 
 # アプリケーション名変更
-bundle exec rake rename:to\[new_app_name\]
+bundle exec rake rename:to[new_app_name]
 git add .
 git commit -m rename
 
