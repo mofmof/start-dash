@@ -1,5 +1,5 @@
 # スタートダッシュ用Railsプロジェクト
-こちらは株式会社mofmofの開発において、Webアプリ開発の初期にスタートダッシュをかけるために、初期設定を行ったRailsテンプレートです。
+こちらはmofmof inc.の開発において、Webアプリ開発の初期にスタートダッシュをかけるために、初期設定を行ったRailsテンプレートです。
 こちらをベースに各自の開発に合った形で調整を行ってください。
 
 ## 実装されている設定&機能一覧
@@ -51,5 +51,13 @@ rake db:migrate RAILS_ENV=test
 
 ## 問い合わせ
 本テンプレートに関するご質問・ご要望は下記サイトからお願いします。
-また週3日〜働けるRailsエンジニアを絶賛募集しています。
 www.mof-mof.co.jp
+
+## 採用情報
+
+[mofmof inc.](http://www.mof-mof.co.jp/)ではエンジニア(Ruby on Rails, 機械学習)を募集しております。少しでも興味がありましたら[Wantedly](https://www.wantedly.com/companies/mof-mof/projects/)の各求人情報からご応募ください。
+
+#### 求人情報リンク
+
+- [技術が目的でビジネスが手段、機械学習を使って新しいビジネスを作るエンジニア](https://www.wantedly.com/projects/80431)
+- [将来自分で起業するために、事業立ち上げ経験を積みたいWEBエンジニア](https://www.wantedly.com/projects/83336)
