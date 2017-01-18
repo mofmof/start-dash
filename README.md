@@ -55,7 +55,21 @@ www.mof-mof.co.jp
 
 ## 採用情報
 
-[mofmof inc.](http://www.mof-mof.co.jp/)ではエンジニア(Ruby on Rails, 機械学習)を募集しております。少しでも興味がありましたら[Wantedly](https://www.wantedly.com/companies/mof-mof/projects/)の各求人情報からご応募ください。
+[mofmof inc.](http://www.mof-mof.co.jp/)では以下のようなスキルをお持ちのエンジニア(Ruby on Rails, 機械学習)を募集しております。少しでも興味がありましたら[Wantedly](https://www.wantedly.com/companies/mof-mof/projects/)の各求人情報からご応募ください。
+
+#### 必須
+
+- Python機械学習の実務経験、もしくはRuby on Railsでの実務経験どちらか必須
+- 経験のない技術をキャッチアップすることが楽しみな方
+- コードレビューなど技術を磨くためのプロセスがあるため、指摘に対して謙虚に受け止められること、他人に対しておもいやりを持って話が出来ることが必要
+- 年齢・性別は不問だが、社会人経験があること
+
+#### 歓迎
+
+- Pythonで機械学習の実務開発経験があること
+- Ruby on Railsでの実務開発経験があること
+- 学生時代にコンピューターサイエンス専攻であること
+
 
 #### 求人情報リンク
 
