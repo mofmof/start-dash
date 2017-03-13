@@ -4,7 +4,7 @@
   <thead>
     <tr>
 <% attributes.reject(&:password_digest?).each do |attribute| -%>
-      <th><%= attribute.human_name %></th>
+      <th><%%= <%= singular_table_name.classify %>.human_attribute_name(:<%= attribute.name %>) %></th>
 <% end -%>
       <th></th>
     </tr>
